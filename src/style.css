@@ -68,6 +68,17 @@ body, html {
     font-family: 'Montserrat';
 }
 
+.header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 48px;
+    line-height: 2;
+    background-color: #1f2937;
+    color: white;
+    padding-left: 48px;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -75,24 +86,19 @@ body, html {
 }
 
 #nav {
-    width: 25%;
+    width: 23%;
     height: 100%;
-    background-color: #1f2937;
-    color: white;
+    background-color: rgb(200, 200, 200);
+    color: #1f2937;
 }
 
-#nav h1 {
-    text-align: center;
-    font-size: 48px;
-    line-height: 2;
-    margin-top: 15px;
-}
-
-#list {
+#nav-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
+    margin: 24px 48px;
+    /* margin-top: 48px; */
 }
 
 #general, #project, #note {
@@ -100,17 +106,32 @@ body, html {
     list-style-type: none;
     font-size: 32px;
     line-height: 1.5;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
     cursor: pointer;
 }
 
 #general:hover, #project:hover, #note:hover {
-    color: rgb(177, 177, 177);
+    border-bottom: 2px solid #1f2937;
 }
 
 #content {
-    width: 75%;
+    width: 70%;
     height: 100%;
     background-color: white;
     text-align: center;
     padding: 15px;
+}
+
+.general-list {
+    margin: 15px 200px;
+}
+
+.groupName {
+    display: flex;
+    justify-content: space-between;
+    font-size: 36px;
+    border-bottom: 2px solid #1f2937;
+    line-height: 1.5;
 }

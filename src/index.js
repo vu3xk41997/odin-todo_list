@@ -1,8 +1,6 @@
 import './style.css';
-import { loadNav, loadContent, loadList } from './loadScreen';
-import { Todo } from './todo';
-import { Note } from './note';
+import { loadNav, loadGeneral } from './loadScreen';
+
 
 document.getElementById('nav').appendChild(loadNav());
-document.getElementById('nav').appendChild(loadList());
-document.getElementById('content').appendChild(loadContent());
+document.getElementById('content').appendChild(loadGeneral());

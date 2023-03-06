@@ -1,11 +1,13 @@
-export function loadNav(){
-    const element = document.createElement('h1');
-    element.innerHTML = "Todo List";
+// export function loadNav(){
+//     const element = document.createElement('div');
+//     const header = document.createElement('h1');
+//     header.classList.add('header');
+//     header.innerHTML = "Todo List";
 
-    return element;
-};
+//     return element;
+// };
 
-export function loadList() {
+export function loadNav() {
     const list = document.createElement('ul');
     list.setAttribute('id','nav-list');
     const general = document.createElement('li');
@@ -25,9 +27,23 @@ export function loadList() {
     return list
 }
 
-export function loadContent() {
-    const element = document.createElement('h1');
-    element.innerHTML = "This is content";
+export function loadGeneral() {
+    const element = document.createElement('div');
+    const header = document.createElement('div');
+    const general = document.createElement('p');
+    const add = document.createElement('p');
+    element.classList.add('general-list');
+    header.classList.add('groupName');
+    general.innerHTML = "General";
+    add.innerHTML = "+";
+    header.appendChild(general);
+    header.appendChild(add);
+    element.appendChild(header)
 
     return element;
+}
+
+export function showTodo(title, dueDate, ) {
+    const element = document.createElement('div');
+    element.classList.add('todo-element');
 }

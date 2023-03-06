@@ -13,4 +13,4 @@ Todo list project using Javascript
 * notes: title, description (display as grid in seperate page)
 
 ## Process
-* Set up project structure, display nav
+* display data from local storage
